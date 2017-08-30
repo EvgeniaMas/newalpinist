@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0043)https://smartresponder.ru/form_preview.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<style type="text/css"></style></head><body style="padding: 50px;">
+		<!-- SmartResponder.ru subscribe form code (begin) -->
+<link rel="stylesheet" href="https://imgs.smartresponder.ru/e1bbeb24091b44f1f4048bbc87edacd11278fd23/">
+<script type="text/javascript" src="./form_preview_files/saved_resource"></script>
+<script type="text/javascript">
+					_sr(function() {
+						var __box = _sr('form[name="SR_form_297342_34"]').find('.sr-box-list li.sr-297342_34');
+						if(typeof _input_val_arr === "undefined") {
+    _input_val_arr = new Array();
+    __box.find("input[type='text']").each(function(){
+        var _this = _sr(this);
+        if(_this.prop("name").indexOf('element') == -1) {
+            _input_val_arr[_this.prop("name")] = _this.val() + '_sr-split_' + _this.css('color');
+        }
+							});
+						}
+						__box.find("input[type='text']").not('input[name="element_captcha"]').each(function(){
+							var _this = _sr(this);
+							_this.val('').attr('placeholder', _input_val_arr[_this.prop("name")].split('_sr-split_')[0]);
+							_this.on('keypress', function(){
+								_this.css('color', 'black');
+							});
+						});
+					});_sr(function() {
+							_sr('form[name="SR_form_297342_34"]').submit(function() {
+								return eval(_sr_return_297342_34);
+							});
+						});_sr_return_297342_34 = "true";							function sr_control_297342_34() {
+								var __box = _sr('form[name="SR_form_297342_34"]').find('.sr-box-list li.sr-297342_34');
+								var _cnt = 0;
+								if(typeof _input_arr === "undefined") {
+									_input_arr = new Array();
+									__box.find("input[type='text']").not('input[name="element_captcha"]').each(function(){
+										var _this = _sr(this);
+										_input_arr[_this.prop("name")] = _this.css("border-left-color") + ":" + _this.css("border-left-width");
+									});
+								}
+								var _alert_msg = "";
+								__box.find("input[type='text']").not('input[name="element_captcha"]').each(function(){
+									var _this = _sr(this);
+									var _passed = true;
+									if(_sr.trim(_this.val()) == '') {
+										if(_this.prop("class") == "sr-required") {
+											_cnt ++;
+											_passed = false;
+										}
+									} 
+            if(typeof _sr(this).attr('minlength') != 'undefined'){
+                if(_sr(this).val().length < _sr(this).attr('minlength')){
+                    _alert_msg += "\nМинимальная длина поля не должна быть меньше " + _sr(this).attr('minlength')  + " символов.";
+                    _passed = false;
+                }
+            }
+									if(_passed) {
+										_this.css({
+											"border-weight": _input_arr[_this.prop("name")].split(":")[1],
+											"border-color": _input_arr[_this.prop("name")].split(":")[0]
+										});
+									} else {
+										_this.css("border","1px solid red");
+									}
+								});
+								if(_cnt != 0) {
+									_alert_msg += "\nУкажите значения всех обязательных для заполнения полей.";
+								}
+								if(_alert_msg != "") {
+									alert(_alert_msg);
+									return false;
+								} else {
+									return true;
+								}
+							}_sr_return_297342_34 = "sr_control_297342_34()";</script>
+<div id="outer_alignment" align="left">
+    <form class="sr-box" method="post" action="https://smartresponder.ru/subscribe.html" target="_blank" name="SR_form_297342_34" style="width: 299px; border: 1px solid rgb(200, 200, 200); margin-left: ; border-radius: 0px;">
+        <input type="text" name="field_name" class="sr-name">
+        <div id="sr-preload_" style="display: none; background-color: #f6f6f6; opacity: 0.5; position: absolute; z-index: 100; text-align: center; font: bold 15px Arial;">Загрузка...</div>
+        <ul class="sr-box-list"><li class="sr-297342_34" style="text-align: center; border: 0px solid rgb(0, 0, 0); border-radius: 0px; height: auto; background-color: rgb(251, 251, 251);"><label class="" style="font-family: arial; color: rgb(84, 93, 103); font-size: 18px; font-weight: bold; height: auto; line-height: 25px;">Подписка на рассылку</label><input type="hidden" name="element_header" value="" style="font-family: Arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; border: none; box-shadow: none; background-color: rgb(255, 255, 255);"></li><li class="sr-297342_34" style="text-align: center; border-radius: 0px; height: 50px; background-color: rgb(251, 251, 251);"><label style="font-weight: normal; font-family: arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; display: none;" class="remove_labels"></label><input type="text" name="field_name_first" style="font-weight: normal; font-family: arial; color: rgb(200, 200, 200); font-size: 12px; font-style: normal; border: 1px solid rgb(200, 200, 200); border-radius: 0px; height: 35px; box-shadow: none; margin-top: 15px; background-image: none; background-color: rgb(255, 255, 255);" value="Ваше имя:" placeholder="Ваше имя:"></li><li class="sr-297342_34" style="text-align: center; border-radius: 0px; height: 50px; background-color: rgb(251, 251, 251);">
+<label style="font-weight: normal; font-family: arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; display: none;" class="remove_labels"></label>
+<input type="text" name="field_email" class="sr-required" style="font-weight: normal; font-family: arial; color: rgb(200, 200, 200); font-size: 12px; font-style: normal; border: 1px solid rgb(200, 200, 200); border-radius: 0px; height: 35px; box-shadow: none; margin-top: 15px; background-image: none; background-color: rgb(255, 255, 255);" value="Ваш email-адрес:" placeholder="Ваш email-адрес:">
+            </li><li class="sr-297342_34" style="text-align: center; height: 51.0000004768372px; border-radius: 0px; border: 0px; background-color: rgb(251, 251, 251);"><input type="hidden" name="element_privacy" value="" style="font-family: Arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; border: none; box-shadow: none; background-color: rgb(255, 255, 255);"><table id="elem_table_element_privacy" border="0" cellspacing="0" cellpadding="0" style="display:inline-table; border-collapse: separate;"><tbody><tr><td id="elem_left_element_privacy" valign="middle" style="width: 14px; height: 16px; background: url(https://imgs.smartresponder.ru/60085662f066f6eb63104ba44dbe21ec3df28f7b/) 0% 42% no-repeat transparent;"></td><td id="elem_container_element_privacy" style="vertical-align: middle;"><label class="sr-element" style="font-family: arial; color: rgb(173, 173, 173); font-size: 11px; font-weight: bold; margin-left: 5px; text-align: left;">Никакого спама, гарантируем!</label></td><td id="elem_right_element_privacy"></td></tr></tbody></table></li><li class="sr-297342_34" style="text-align: center; border-radius: 0px; border: 0px; height: 65px; background-color: rgb(251, 251, 251);"><table id="elem_table_subscribe" border="0" cellspacing="0" cellpadding="0" style="display: inline-table; border-collapse: separate; margin-top: 12px;"><tbody><tr><td id="elem_left_subscribe" valign="middle" style="width: 17px; height: 35px; background: url(https://imgs.smartresponder.ru/bb76f843df9be26bc9c673d51311b75f02a4a48d/) 0% 50% no-repeat transparent;"></td><td id="elem_container_subscribe" style="vertical-align: middle;"><input type="submit" name="subscribe" value="Подписаться" style="font-family: arial; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; border: 0px solid rgb(240, 240, 240); height: 35px; width: 100%; margin: 0px; padding: 0px 12px; box-shadow: none; background: url(https://imgs.smartresponder.ru/29cdddd2c7584ef90392a40e9f768a8629cd0337/) 0% 50% repeat transparent;"></td><td id="elem_right_subscribe" style="width: 17px; height: 35px; background: url(https://imgs.smartresponder.ru/246c141e33d5150d05cc1c6aaa8cf835f4387a36/) 0% 50% no-repeat transparent;"></td></tr></tbody></table></li></ul>
+        <input type="hidden" name="uid" value="617413">
+    <input type="hidden" name="did[]" value="759134"><input type="hidden" name="tid" value="0"><input type="hidden" name="lang" value="ru"></form>
+</div>
+<!-- SmartResponder.ru subscribe form code (end) -->	
+
+</body></html>
